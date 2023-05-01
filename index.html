@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link href="./assets/index.css" rel="stylesheet">
+
+    <title>Everyday quotes</title>
+</head>
+<body>
+    <div class="container">
+        <section class="header-content">
+            <header>
+                <nav>
+                    <a href="#new-quote">New quote</a>
+                    <a href="">Connect</a>
+                    <a href="#my-quotes-info" id="display-quotes"> My Quotes</a>
+                </nav>
+                <h1>Everyday<span style="color:yellowgreen; margin-left:10px;">Quotes</span></h1>
+                <p>A little motivation goes a long way.</p>
+                <p>Get your daily dose of inspiration from the world's famous motivators.</p>
+                <h4>Share it to your friends on the socials</h4>
+                <div class="quote-container" id="quote-container">
+                    <!--Quote-->
+                    <div class="quote-text">
+                        <i class="fas fa-quote-left"></i>
+                        <span id="quote">What you are is what you have been. What you'll be is what you do now.</span> 
+                    </div>
+                    <!--Author-->
+                    <div class="quote-author">
+                        <span id="author">Buddha</span>
+                    </div>
+                    <!--Buttons-->
+                    <div class="button-container">
+                        <button class="twitter-button" id="twitter" title="Tweet This">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                        <button id="new-quote">New Quote</button>
+                    </div>
+                </div>
+            </header>
+            <h1>Create Personal Quotes Collection</h1>
+            <form id="quote-form">
+                <label for="quote-text" name=" quote-text">Quote: </label>
+                    <input type="text" name="quote text" placeholder="quote" id="quote-text">
+              <br>
+                <label for="quote-author" name="quote-author">Author: </label>
+                    <input type="text" name="quote author" placeholder="author" id="quote-author"><br>
+                <input type="submit" value="Submit" id="btn-submit">
+            </form>
+
+            <form id="delete-form">
+                <label for="delete-quote" name="delete-quote">Delete: </label>
+                <input id="id" name="delete-quote" placeholder="delete quote">
+                <input type="submit" value ="delete" id ="delete-quote">
+           
