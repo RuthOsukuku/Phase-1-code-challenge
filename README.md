@@ -182,5 +182,3 @@ You can consult the [json-server docs][] for more information.
 //viewQuotes(): This function listens for a click event on an element with the ID "display-quotes". When triggered, it sends a GET request to the same local server endpoint to retrieve an array of quote objects. It then loops through each quote object and creates a list item element that displays the quote text, and appends it to an unordered list element with the ID "quote-text".
 
 //deleteQuote(): This function listens for a form submission event on an element with the ID "delete-form". When triggered, it retrieves the ID value from an input field with the ID "id", constructs a DELETE request to the local server endpoint with the retrieved ID, and sends the request. The function then logs a response message to the console.
-
-//makePatchRequest(): This function sends a PATCH request to the local server endpoint with the ID value of 2, and a request body object that updates the author name of the quote with the ID of 2. The function then logs the response object to the console. However, this function is commented out and not currently being used in the code.
