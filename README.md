@@ -11,7 +11,7 @@
 
 ## Introduction
 
-Welcome to JavaScript Project Mode!
+Everyday Quotes
 
 You’ve worked so hard to get here and have learned a ton. Now it's time to bring
 it all together!
@@ -126,22 +126,64 @@ with a structure in the root of your project that looks like this:
 
 ```json
 {
-  "toys": [
-    {
-      "id": 1,
-      "name": "Woody",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 8
-    },
-    {
-      "id": 2,
-      "name": "Buzz Lightyear",
-      "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 14
-    }
-  ]
-}
-```
+    "quotes": [
+      {
+        "inputQuote": "To make progress you mustactually get started. The step is to take step today.",
+        "inputAuthor": "jim Rohn",
+        "id": 1
+      },
+      {
+        "inputQuote": "The sun does shine for a few trees and flowers, but for the wide world's joy.",
+        "inputAuthor": "Benard Edmonds",
+        "id": 2
+      },
+      {
+        "inputQuote": "Don't be so hard on yourself. Take a moment, sit back and marvel at your life: at the grief that softened you, at the heartache that wisened you, at the suffering that strengthened you, at the betrayal that woke you. Despite everything, you are still growing. you are better now than you were then. Be proud of this ",
+        "inputAuthor": "Grantons Omurwa",
+        "id": 3
+      },
+      {
+        "inputQuote": "Love is like drawing a picture of a person you care for most. It takes time, passion and patience. But erasing it takes seconds ",
+        "inputAuthor": "Enoch Jabez",
+        "id": 4
+      },
+      {
+        "inputQuote": "Make hay while the sun shines.",
+        "inputAuthor": "African proverb",
+        "id": 5
+      },
+      {
+        "inputQuote": "A man must be big enough to admit his mistakes, smart enough to profit from them, and strong enough to correct them. ",
+        "inputAuthor": "John C Maxwel",
+        "id": 6
+      },
+      {
+        "inputQuote": "Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking",
+        "inputAuthor": "Steve Jobs",
+        "id": 7
+      },
+      {
+        "inputQuote": "Hesitating to act because the whole vision might not be achieved, or because others do not yet share it, is an attitude that only hinders progress.",
+        "inputAuthor": "Mahatma Gandhi",
+        "id": 8
+      },
+      {
+        "inputQuote": "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough.",
+        "inputAuthor": "Abraham lincon",
+        "id": 9
+      },
+      {
+        "inputQuote": "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success. ",
+        "inputAuthor": "David Cameroon",
+        "id": 10
+      },
+      {
+        "inputQuote": "Destiny is not created by the shoes we wear; But by the steps we take.",
+        "inputAuthor": "John Lennon",
+        "id": 11
+      }
+    ]
+  }
 
 Then, assuming you have `json-server` installed globally, you can run this
 command to run the server:
@@ -149,16 +191,6 @@ command to run the server:
 ```console
 $ json-server --watch db.json
 ```
-
-Whatever top-level keys exist in your `db.json` file will determine the routes
-available. In the example above, since we have a key of `toys` pointing to an
-array of toy objects, `json-server` will generate the following routes:
-
-- `GET /toys`
-- `POST /toys`
-- `GET /toys/:id`
-- `PATCH /toys/:id`
-- `DELETE /toys/:id`
 
 You can consult the [json-server docs][] for more information.
 
