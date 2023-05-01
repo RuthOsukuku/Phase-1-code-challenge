@@ -110,4 +110,16 @@ function deleteQuote() {
     .then(res => console.log(res))
   })
     }
-  
+    function makePatchRequest(){
+        fetch('http://localhost:3000/quotes/2', {
+        method: 'PATCH',
+        body: JSON.stringify({
+          inputAuthor: 'Lionel Da Vinci',
+        }),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+        })
+        .then((response) => response.json())
+        .then((result) => console.log(result.inputAuthor));
+        }  
