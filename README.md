@@ -1,4 +1,6 @@
-# Phase-1-code-challenge
+# Phase-1-code-challenge live link
+
+https://ruthosukuku.github.io/Phase-1-code-challenge/
 # Phase 1 Project Guidelines
 
 ## Learning Goals
