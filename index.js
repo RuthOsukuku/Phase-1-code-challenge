@@ -90,7 +90,8 @@ document.addEventListener('DOMContentLoaded', function() {
   // View quotes
   function viewQuotes() {
     document.getElementById('display-quotes').addEventListener('click', function() {
-      fetch('http://localhost:3000/quotes')
+      fetch('http://localhost:/quotes')
+
         .then(quoteres => quoteres.json())
         .then(newResult => newResult.forEach(quotesObj => {
           const myQuotesList = document.getElementById('quote-text');
