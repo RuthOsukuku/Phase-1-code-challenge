@@ -53,4 +53,11 @@ function generateRandomQuote() {
         });
     });
   }
-  
+ // Tweet a quote
+function tweetQuote() {
+    document.getElementById('twitter').addEventListener('click', function() {
+      const twitterQuoteUrl = `https://twitter.com/intent/tweet?text=${quoteEl.textContent} - ${quoteAuthorEl.textContent}`;
+      window.open(twitterQuoteUrl, '_blank');
+    });
+  }
+   
