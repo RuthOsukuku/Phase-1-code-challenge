@@ -60,4 +60,27 @@ function tweetQuote() {
       window.open(twitterQuoteUrl, '_blank');
     });
   }
-   
+
+  // Create new quotes
+function createNewQuotes() {
+    document.getElementById('quote-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const url = "http://localhost:3000/quotes";
+      const inputQuote = document.getElementById('quote-text').value;
+      const inputAuthor = document.getElementById('quote-author').value;
+      const post = { inputQuote, inputAuthor };
+      const configurationObject = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(post),
+      };
+      fetch(url, configurationObject)
+        .then(res => res.json())
+        .then(results => console.log("successful addition"));
+      e.target.reset();
+    });
+  }
+  
