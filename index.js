@@ -98,4 +98,16 @@ function viewQuotes() {
         }));
     });
   }
+  // Delete a quote
+function deleteQuote() {
+    document.getElementById('delete-form').addEventListener('submit', function() {
+      const id = document.getElementById('id').value;
+      fetch('http://localhost:3000/quotes/' + id, {
+   
+      method: 'DELETE',
+    })
+    .then(res => res.json()) // or res.json()
+    .then(res => console.log(res))
+  })
+    }
   
