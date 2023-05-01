@@ -84,3 +84,18 @@ function createNewQuotes() {
     });
   }
   
+  // View quotes
+function viewQuotes() {
+    document.getElementById('display-quotes').addEventListener('click', function() {
+      fetch('http://localhost:3000/quotes')
+        .then(quoteres => quoteres.json())
+        .then(newResult => newResult.forEach(quotesObj => {
+          const myQuotesList = document.getElementById('quote-text');
+          const newQuoteEl = document.createElement('li');
+          newQuoteEl.innerText = quotesObj.inputQuote;
+          myQuotesList.appendChild(newQuoteEl);
+          console.log(quotesObj.inputQuote);
+        }));
+    });
+  }
+  
